@@ -1,9 +1,13 @@
 # Widowx-arm-control-with-MoveIt
-In this tutorial, Moveit will be used to control the widowx arm
+In this tutorial, Moveit will be used to control the widowx arm. MoveIt is the most widely used software for manipulation and has been used on over 150 robots. By incorporating the latest advances in motion planning, manipulation, 3D perception, kinematics, control and navigation, MoveIt is state of the art software for mobile manipulation.
 
 # Install dependencies
 
+"Htop" is a real-time process monitoring tool for Ubuntu operating system. The htop command is similar to top command, but much improved version.
+
 $ sudo apt install git htop
+
+"pcl-ros" package provides interfaces and tools for bridging a running ROS system to the Point Cloud Library
 
 $ sudo apt install ros-kinetic-moveit ros-kinetic-pcl-ros
 
