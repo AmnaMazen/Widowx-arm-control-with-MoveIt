@@ -27,6 +27,10 @@ $ catkin_make
 
 # ROS control of the arm independent of the SR300 (camera) Sensor
 
+Give an access authorization for /dev/ttyUSB0
+
+$ sudo chmod 777 /dev/ttyUSB0
+
 $ cd ~/widowx_arm
 
 $ source devel/setup.bash
