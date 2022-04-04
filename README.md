@@ -11,6 +11,10 @@ $ sudo apt install git htop
 
 $ sudo apt install ros-kinetic-moveit ros-kinetic-pcl-ros
 
+If you are using ROS melodic with ubunu 18.04 Run the following command instead
+
+$ sudo apt install ros-melodic-moveit ros-melodic-pcl-ros
+
 # Clone widowx_arm MoveIt repository and build
 
 $ mkdir -p ~/widowx_arm/src
