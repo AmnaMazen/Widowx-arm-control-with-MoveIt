@@ -29,6 +29,17 @@ $ cd ~/widowx_arm
 
 $ catkin_make
 
+If you got an error like this 
+file:///home/amna/Downloads/catkin_make%20error.png![image](https://user-images.githubusercontent.com/47673149/161577583-2e5546cc-b4b6-4134-97db-8054d84397fa.png)
+
+Go to the following file "widowx_arm/src/widowx_arm/widowx_arm_ikfast_plugin/src/widowx_arm_ikfast_moveit_plugin.cpp" and implement three modifications:
+
+1- replace "boost::shared_ptr<urdf::Joint> joint  " by "urdf::JointConstSharedPtr joint "
+
+2- replace " boost::shared_ptr<urdf::Link> link =" by "urdf::LinkConstSharedPtr link = "
+
+3- replace "boost::const_pointer_cast<urdf::Link>(robot_model.getLink(tip_frame_));" by "urdf::LinkConstSharedPtr(robot_model.getLink(tip_frame_));"
+
 # ROS control of the arm independent of the SR300 (camera) Sensor
 
 Give an access authorization for /dev/ttyUSB0
